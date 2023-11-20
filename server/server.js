@@ -30,7 +30,7 @@ connection.once('open', () => {
 });
 
 
-app.post('/api/Log', (req, res) => {
+app.post('http://localhost:5000/api/Log', (req, res) => {
   const newLog = new Log(req.body);
 
   newLog.save()

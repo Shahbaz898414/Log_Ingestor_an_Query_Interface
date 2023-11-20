@@ -14,11 +14,19 @@ const logSchema = new mongoose.Schema({
     type:String,
     require:true
   },
+  // date:{
+  //   type: Date,
+  //   require:true
+  // },
   timestamp: {
     type: Date,
-    // default: Date.now,
-    require:true
+    default: Date.now,
   },
+  // time: {
+  //   type: Date,
+  //   // default: Date.now,
+  //   require:true
+  // },
   traceID: {
     type:String,
     require:true
@@ -31,12 +39,12 @@ const logSchema = new mongoose.Schema({
     type:String,
     require:true
   },
-  metadata: {
+  // metadata: {
     parentResourceId: {
       type:String,
       require:true
     },
-  },
+  // },
 });
 
 
