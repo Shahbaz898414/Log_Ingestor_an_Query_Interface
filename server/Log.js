@@ -16,7 +16,8 @@ const logSchema = new mongoose.Schema({
   },
   timestamp: {
     type: Date,
-    default: Date.now,
+    // default: Date.now,
+    require:true
   },
   traceID: {
     type:String,
